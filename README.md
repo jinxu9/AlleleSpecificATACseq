@@ -2,7 +2,7 @@
 Brief Description 
 
 
-Inlcuding 
+Including 
 
 1. Reference genome modification according to SNP sites
 
