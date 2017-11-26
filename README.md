@@ -24,8 +24,11 @@ d) Then build up genome index for bowtie2.
 Filter : Only single nucleotide polymorphism were kept for this step. 
 
 2. Genome Alignment and Split allelic reads 
- 	a) Set the reference as allelic-specific genome
+ 	
+	a) Set the reference as allelic-specific genome
+	
 	b) Run the normal ATACseq pipeline
+	
 	c) Run "SNPsplit" to split allelic reads (SNPsplit is kindly shared by Felix Krueger (felix.krueger@babraham.ac.uk))
 	
 3.Allele informative peaks 
