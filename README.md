@@ -1,11 +1,14 @@
 # AlleleSpecificATACseq
-The allele specific ATACseq pipeline including three major steps. 
+AlleleSpecificATACseq was modified  from an previous generally allelic specific pipeline (by Felix Krueger) to our ATACseq data. The allele specific ATACseq pipeline including three major steps.  
+
 The scripts to process the first two steps were inlcuded in this sites. The last step can be easily done with bedtools and shell commands, which was not included. 
+
 
 1. Build allelic-specific genome. 
 In the Nature Genetic paper, the reference genome is mm9 and matched dbSNP(v132) were used to extract the allelic information between 129S1 and Cast. 
 For people who want use a different genome version. It's important to match your dbSNP version with your genome version. 
 For mm10, any versions above v137 should match to mm10. The current version is  v142(ftp://ftp-mouse.sanger.ac.uk/current_snps/). 
+The script for extract SNP information from VCF file into SNP information is availble at https://github.com/FelixKrueger/SNPsplit/blob/master/SNPsplit_genome_preparation 
 The process for SNP_mask genome including : 
 	a) Filter SNP sites for each strain from dbSNP 
 	b) Change common SNP from reference allele to strains specific allele.
